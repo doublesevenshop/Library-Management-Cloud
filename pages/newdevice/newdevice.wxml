@@ -1,0 +1,26 @@
+
+<view class="all">
+    <view class="title">新建设备信息</view>
+        <form  bindsubmit="btnSub">
+        <input name="type_name" placeholder="资产分类"></input>
+        <input name="asset_id" placeholder="资产编号"></input>
+        <input name="asset_name" placeholder="资产名称"></input>
+        <input name="obtain_time" placeholder="取得日期"></input>
+        <input name="user" placeholder="使用人"></input>
+        <input name="department" placeholder="使用/管理部门"></input>
+        <input name="storage_location" placeholder="存放地点"></input>
+        <input name="manufacturer" placeholder="厂家"></input>
+        <input name="brand" placeholder="品牌"></input>
+        <input name="specification" placeholder="规格型号"></input>
+        <input name="create_user" placeholder="制单人"></input>
+        <input name="create_time" placeholder="制单时间"></input>
+        <input name="manager" placeholder="经办人"></input>
+        <input name="supplier" placeholder="供货商"></input>
+        <input name="contract_no" placeholder="合同号"></input>
+        <input name="factory_no" placeholder="出厂号"></input>
+        <input class="last" name="old_storage_location" placeholder="原存放地点"></input>
+        <button class="sr" hover-class="button-hover" color="blue" form-type="submit">提交</button>
+        <button class="sr" hover-class="button-hover" form-type="reset">重置</button>
+        </form>
+    
+</view>

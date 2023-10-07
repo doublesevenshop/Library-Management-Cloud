@@ -1,0 +1,29 @@
+/* pages/us/us.wxss */
+
+page{
+    background-color: #5C6BC0;
+  }
+
+@font-face{
+    font-style: normal;
+    font-family: 'font';
+    src: url('https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/FontName.woff?sign=00d91f1140f55384f2f42bec5c7703c1&t=1645702126')format('truetype');
+  }
+
+  .logo{
+    width: 750rpx;
+    display:flex;
+    justify-content: center;
+  }
+
+  .library{
+    width: 400rpx; 
+    }
+
+  .intro{
+    font-family: "font";
+    color:white;
+    font-size: 40rpx;
+    text-align: center;
+    margin-top: 50rpx;
+  }

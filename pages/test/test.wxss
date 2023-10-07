@@ -1,0 +1,26 @@
+page{
+  background-color: #f0f0f0;
+  display: flex;
+  width: 750rpx;
+  flex-direction: column;
+  justify-content: center;
+}
+.news-text{
+  display: flex;
+  width: 600rpx;
+  color: red;
+  /*关键属性（必须有的）  */
+  display: -webkit-box;
+}
+
+.news-text.hide{
+  /*规定子元素的排列方向 */
+  -webkit-box-orient: vertical;
+  /*限制文本显示的行数  */
+  -webkit-line-clamp: 2;
+  /*实现多余的文字隐藏并用省略号来代表被隐藏的文字  */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+  

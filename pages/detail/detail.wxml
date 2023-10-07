@@ -1,0 +1,74 @@
+
+<!-- 状态1 -->
+<view class="type_1" hidden="{{type_1}}">
+  
+
+
+  <view class="P_message" style="font-weight: 700;font-size: 40rpx;margin-top: 50rpx; color:#707070 ;">{{datainfo1.asset_name}}</view>
+    <view class="picture">
+
+
+
+<image  wx:for="{{datainfo1.file1}}" src="{{item}}" 
+data-index="{{ index }}"style="width:{{ images[index].width }}rpx; height:{{ images[index].height }}rpx;"></image>
+</view >
+
+
+  <view class="basic">
+    <view class="basic_1"></view>
+    <view class="basic_2">
+      <text class="basic_2_t">基本信息</text>
+    </view>
+    <view class="basic_3"></view>
+  </view>
+
+
+  <view class="P_small">种类名：{{datainfo1.type_name}}</view>
+  <view class="P_small">存放地点：{{datainfo1.storage_location}}</view>
+  <view class="P_small">品牌：{{datainfo1.brand}}</view>
+  <view class="P_small">生产厂家：{{datainfo1.brand}}</view>
+ 
+</view>
+<!-- 状态2 -->
+<view class="type_2" hidden="{{type_2}}">
+   <block  wx:for="{{datainfo}}" wx:key="index" >
+        <view class="menuList menuList2" bindtap="toinfoDetail" data-name="{{item._id}}">
+          <view class="P_message">
+            <view>{{item.asset_name}}</view>
+            <view class="P_small" style="margin-top: 5rpx;">{{item.factory_no}}</view>
+            <view class="P_small" >{{item.specification}}</view>
+            <view class="P_bottom" ></view>
+          </view>
+        </view>
+      </block>
+</view>
+<!-- 状态3 -->
+<view class="type_3" hidden="{{type_3}}">
+  <view class="how_use">
+    <view class="how_use_word">使用说明</view>
+    <view class="how_use_what"><view class="P_small" style="font-size: 30rpx;">使用说明：{{datainfo1.file3}}</view></view>
+  </view>
+</view>
+<!-- 底部选择栏 -->
+<view class="bottom">
+  <view class="inform" bindtap="switch_1">
+    <view class="inf">
+    <icon class="iconfont icon-icon-jibenxinxi" style="{{isChecked_1?'font-size:56.25rpx;color:#1296db':'font-size:56.25rpx;color:#707070'}}"></icon>
+    </view>
+    <text class="{{isChecked_1?'in_1':'in'}}">基本信息</text>
+  </view>
+  <view class="specific" bindtap="switch_2">
+    <view class="spe">
+    <icon class="iconfont icon-jutishebeidongzuo" style="{{isChecked_2?'font-size:56.25rpx;color:#1296db':'font-size:56.25rpx;color:#707070'}}"></icon>
+    </view>
+    <text class="{{isChecked_2?'sp_1':'sp'}}">具体设备</text>
+  </view>
+  <view class="book" bindtap="switch_3">
+    <view class="boo">
+    <icon class="iconfont icon-shiyongshuoming_white" style="{{isChecked_3?'font-size:56.25rpx;color:#1296db':'font-size:56.25rpx;color:#707070'}}"></icon>
+    </view>
+    <text class="{{isChecked_3?'sp_1':'sp'}}">使用说明</text>
+  </view>
+</view>
+
+  

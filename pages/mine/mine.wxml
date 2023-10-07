@@ -1,0 +1,107 @@
+<view class="content">  
+    <view class="login" style="height:200px;">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E8%83%8C%E6%99%AF%201.png?sign=095aafd86e2abc09461a124c6ae227d7&t=1645705170" class="pic_1" mode="widthFix"></image>
+
+        <view class="pic2">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E7%99%BD%E6%A4%AD%201.png?sign=490bc528eb567166a847e5f07a7de4e9&t=1645705740" class="pic_2" mode="widthFix"></image>
+        </view> 
+        <view class="pic3">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E8%93%9D%E6%A4%AD%201.png?sign=172f38221266c45e06c98cd79d8e1e52&t=1645705773" class="pic_3" mode="widthFix"></image>
+        </view>
+        <view class="pic4">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E8%93%9D%E5%9C%86%201.png?sign=6b92cd5edfcdf4e10fb2d0bc8e23a1c3&t=1645705794" class="pic_4" mode="widthFix"></image>
+        </view>
+        <view class="pic5">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E7%BB%BF%E6%A4%AD%201.png?sign=28819ac91c86cc9cf04c15d58640e4a9&t=1645705835" class="pic_5" mode="widthFix"></image>
+        </view>
+        <view class="pic6">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E7%BB%BF%E5%9C%86%201.png?sign=f3931497b1c16d732e148b2f1a4fbac4&t=1645705851" class="pic_6" mode="widthFix"></image>
+        </view>
+        <view class="pic7">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E7%99%BD%E5%9C%86%201.png?sign=92cc9e5e542d684df300cd9ffe770a57&t=1645705875" class="pic_7" mode="widthFix"></image>
+        </view>
+        <view class="pic8">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E7%99%BD%E6%A4%AD%202.png?sign=4adc20d9fb0f7d36a06b172ee2233b21&t=1645705895" class="pic_8" mode="widthFix"></image>
+        </view>
+    </view>
+
+    <view class="backcolor"></view>
+        
+    <view class="pic9">
+    <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E5%90%8D%E6%A1%86.png?sign=56ead66f191de8f5a94512290a1bd3c0&t=1645705967" class="pic_9" mode="widthFix"></image>
+    </view>
+
+    <!-- <view class='img' style="border-radius: 100rpx;background-color: #f0f0f0;">
+        <open-data type="userAvatarUrl"></open-data>
+    </view> -->
+    <view  wx:if="{{userdata}}" class="1">
+        <button class="avatar-wrapper2">
+        <image class="avatar2" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/%E9%BB%98%E8%AE%A4%E5%A4%B4%E5%83%8F.jpg?sign=4ce5846b39bdd47a9dcc63ecf83b743e&t=1651317806"></image>
+    </button> 
+    </view>
+    <view wx:else  class="1">
+        <button class="avatar-wrapper" bindtap="chooseImageTap">
+            <image class="avatar" src="{{avatarUrl}}"></image>
+        </button> 
+    </view>
+
+    <view class='userinfo'>
+        <view wx:if="{{userdata}}" class='title'>游客</view>
+        <view wx:else class='title'>
+        {{username}}
+        </view>
+        
+    </view>
+</view>
+
+<!-- 第二块 -->
+<view class="block">
+<view class="secondblock">
+ <view class="item" bindtap="toinfoDetail" data-index="1">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E6%9C%80%E8%BF%91%E8%AE%BF%E9%97%AE%402x.png?sign=9d7c9961e57ee6ee5074a53338bfa9a5&t=1648806271" class="item_ico"></image>
+        <span>最近访问</span>
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/right.png?sign=85706c0889aec840d298c35e196851e6&t=1645705511" class="item_arrow"></image>
+    </view>
+    <view class="h1"></view>
+    <view class="item" bindtap="chulijindu" >
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E6%8F%90%E7%8E%B0%E5%A4%84%E7%90%86%E8%BF%9B%E5%BA%A6-%E6%AD%A3%E5%9C%A8%E5%AE%A1%E6%A0%B8%E4%B8%AD%402x.png?sign=be3361b1b5dc874ec4ea2de7431d3122&t=1648806177" class="item_ico"></image>
+        <span>处理进度</span>
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/right.png?sign=85706c0889aec840d298c35e196851e6&t=1645705511" class="item_arrow"></image>
+    </view>
+    <view class="h1"></view>
+    <view class="item" bindtap="openBookList" data-index="2">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E5%8A%A0%E5%85%B3%E6%B3%A8.png?sign=885abeee5a26d4fd6feed948b1a04183&t=1648806692" class="item_ico"></image>
+        <span>已关注的设备</span>
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/right.png?sign=85706c0889aec840d298c35e196851e6&t=1645705511" class="item_arrow"></image>
+    </view>
+    <view class="h1"></view>
+    <view class="item" bindtap="newdeviceinfo">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E8%AE%BE%E5%A4%87%E4%BF%A1%E6%81%AF%402x.png?sign=536b59646f4902696e69bd2a0b7d835c&t=1648806449" class="item_ico"></image>
+        <span>新建设备信息</span>
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/right.png?sign=85706c0889aec840d298c35e196851e6&t=1645705511" class="item_arrow"></image>
+    </view>
+</view>
+<!-- 第三块 -->
+<view class="h10"></view>
+<view class="thirdblock">
+    <view class="item" bindtap="openBookList" data-index="5" bindtap="openOpinion">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E6%84%8F%E8%A7%81%E5%8F%8D%E9%A6%88-%E9%A6%96%E9%A1%B524_24%402x.png?sign=f3c0b8062b26f859bd49a4a66b5f8ce7&t=1648806148" class="item_ico"></image>
+        <span>意见反馈</span>
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/right.png?sign=85706c0889aec840d298c35e196851e6&t=1645705511" class="item_arrow"></image>
+    </view>
+    <view class="h1"></view>
+    <view class="item" bindtap="aboutUs" data-index="4">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC%402x.png?sign=27295baed9b760fd123785f565539527&t=1648806109" class="item_ico"></image>
+        <span>关于我们</span>
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/right.png?sign=85706c0889aec840d298c35e196851e6&t=1645705511" class="item_arrow"></image>
+    </view>
+   
+    <!-- <view class="h1"></view>
+    <view class="item" bindtap="openSetting">
+        <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_mine/%E8%AE%BE%20%E7%BD%AE%402x.png?sign=248c5134e998eb2f6f701256d0a99cf6&t=1648806209" class="item_ico"></image>
+        <span>设置</span>
+    </view> -->
+</view>
+<view class="h10"></view>
+<view class="h10"></view>
+</view>

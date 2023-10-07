@@ -1,0 +1,8 @@
+<!--pages/us/us.wxml-->
+<view class="logo">
+  <image class="library" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/%E5%9B%BE%E7%AE%A1%E4%BC%9Alogo%402x.png?sign=3b477cd10fdd3b0e6f6a0e0dc7374fda&t=1648803416" mode="widthFix"></image>
+</view>
+<view class="intro">本款小程序为北京邮电大学大创项目</view >
+<view  class="intro">主要服务于图书馆工作人员</view >
+<view  class="intro">各位同学也可作为游客查阅设备相关信息</view >
+<view  class="intro">欢迎各位同学使用并提出宝贵建议！</view >

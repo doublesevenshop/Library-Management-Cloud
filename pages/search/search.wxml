@@ -1,0 +1,27 @@
+<!--pages/search/search.wxml-->
+<view>
+     <view>
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+            <!-- 搜索框 -->
+                <view class="weui-search-bar__box">
+                  <image class="weui-icon-search_in-box" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/%E6%90%9C%E7%B4%A2--1.png?sign=fe28b92365828ccff30935904c5397a2&t=1645724908" mode="widthFix"></image>
+                    <input type="text" class="weui-search-bar__input" bindinput="myIpt" placeholder="请输入搜索内容"
+                   />
+                </view>
+            </view>
+            <!-- 确定搜索 -->
+            <view class="weui-search-bar__cancel-btn" hover-class="weui-search-bar__cancel-btn2" bindtap='searching'>确认</view>
+        </view>
+    </view>
+</view>
+<block wx:for="{{menudetail}}" wx:key="index" >
+        <view class="menuList2" bindtap="toFoodDetail" data-name="{{item.asset_name}}">
+          <view class="P_message">
+            <view>{{item.asset_name}}</view>
+            <view class="P_small">{{item.factory_no}}</view>
+            <view class="P_small">{{item.specification}}</view>
+            
+          </view>
+        </view>
+      </block>

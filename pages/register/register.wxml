@@ -1,0 +1,37 @@
+<view class="container1">
+
+<view class="tuguanyun">
+  图管云
+  </view>  
+<view class="logo">
+  <image class="library" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/%E5%9B%BE%E7%AE%A1%E4%BC%9Alogo%402x.png?sign=3b477cd10fdd3b0e6f6a0e0dc7374fda&t=1648803416" mode="widthFix"></image>
+</view>
+<view class="shebei">
+  北京邮电大学图书馆设备管理系统
+</view>
+
+<!-- 下划线 -->
+<!-- <view class="moto" hover-class="plain-hover"></view> -->
+<!-- 输入框 -->
+<!-- 用户 -->
+<view class="moto1" >
+<!-- <image class="icon1" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/%E8%B4%A6%E5%8F%B7%402x.png?sign=0531f3c0c5e83ea74f00f760d9da5728&t=1648804645" mode="widthFix"  /> -->
+<input class="input1" placeholder="请输入姓名" bindinput="myIpt" placeholder-class="phcolor"></input>
+</view>
+
+<!-- 密码 -->
+<view class="moto2" >
+<!-- <image class="icon2" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/%E5%AF%86%20%E7%A0%81%402x.png?sign=4c11cf551b98ce0b8d77cd009d5fb3ab&t=1648804915" mode="widthFix"  /> -->
+<input class="input2"placeholder="请输入密码" bindinput="myIpt2" placeholder-class="phcolor"></input>
+</view> 
+
+<!-- 登录按钮 -->
+<view class="moto3" bindtap="logBtn"hover-class="button-hover"form-type="submit"  >
+<view class="title2" >登录</view>
+</view>
+
+<view class="freemodel" hover-class="hovermodel" bindtap="outvisitor">
+<text >游客模式</text>
+</view>
+
+</view>

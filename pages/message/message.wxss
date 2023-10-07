@@ -1,0 +1,393 @@
+page{
+  background-color: #f0f0f0;
+  display: flex;
+  width: 750rpx;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.pic1{
+  width: 750rpx;
+  height: 150rpx;
+  padding-left: 5rpx;
+  background-color: #5C6BC0;
+  position: flex;
+}
+.text1{
+  font-family: "微软雅黑";
+  display:flex;
+  color: white;
+  font-size: 60rpx;
+  justify-content: center;
+  padding-top: 35rpx;
+  font-weight: 900;
+}
+
+.M_title{
+position: flex;
+display: flex;
+width: 400rpx;
+height: 60rpx;
+color: #5c6bc0;
+background-color: #f0f0f0;
+border-radius: 20rpx;
+margin-left: 180rpx;
+margin-top: 30rpx;
+}
+
+.M_Repair{
+  width: 200rpx;
+  height: 60rpx;
+  border-top-left-radius:20rpx ;
+  border-bottom-left-radius:20rpx ;
+  background-color: white;
+}
+.M_Note{
+  width: 200rpx;
+  height: 60rpx;
+  border-top-right-radius:20rpx ;
+  border-bottom-right-radius:20rpx ;
+  background-color: white;
+}
+.M_active{
+background-color:#dcefff;
+}
+
+.M_text{
+  font-family: "宋体";
+  display:flex;
+  font-size: 35rpx;
+  font-weight: 700;
+  justify-content: center;
+  padding-top: 6rpx;
+}
+
+.line{
+  position: flex;
+  display: flex;
+  width: 650rpx;
+  height: 8rpx;
+  background-color:#5C6BC0;
+  border-radius: 40rpx;
+  margin-left: 53rpx;
+  margin-top: 30rpx;
+}
+
+.pic2{
+  position: fixed;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100rpx;
+  bottom: 120rpx;
+  right: 5rpx;
+}
+
+.pic_2_1{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 100rpx;
+  position: absolute;
+  background-color: #5C6BC0;
+  right: 0rpx;
+  top: 0rpx;
+  opacity: 0.75;
+}
+
+.pic_2_2{
+  width: 88rpx;
+  height: 8rpx;
+  border-radius: 100rpx;
+  position: absolute;
+  right: 16rpx;
+  top: 57rpx;
+  background-color: white;
+  opacity: 0.75;
+}
+
+.pic_2_3{
+  width: 8rpx;
+  height: 88rpx;
+  border-radius: 100rpx;
+  position: absolute;
+  right: 56rpx;
+  top: 16rpx;
+  background-color: white;
+  opacity: 0.75;
+}
+
+/* 注意事项样式开头 */
+  .row{
+    width: 650rpx;
+    padding: 30rpx 50rpx;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .message_content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20rpx;
+  }
+
+  .message_content .main_message {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+    margin-left: -450rpx;
+    background-color: #fff;
+    padding-left: 20rpx;
+  }
+
+  .M_firstrow{
+    display: flex;
+    margin-top:15rpx;
+  }
+  .showname{
+    width: 350rpx;
+    height: 40rpx;
+    font-size: 36rpx;
+    font-weight: 800;
+  }
+
+  .showtime{
+    margin-top: 10rpx;
+    height: 30rpx;
+    font-size:25rpx;
+    color: #707070;
+  }
+
+  .showcontent{
+    margin-top: 10rpx;
+    font-size: 30rpx;
+    display:  -webkit-box;
+    word-break: break-all;
+    width: 600rpx;
+  }
+
+  .showcontent.hide{
+    /*规定子元素的排列方向 */
+    -webkit-box-orient: vertical;
+    /*限制文本显示的行数  */
+    -webkit-line-clamp: 3;
+    /*实现多余的文字隐藏并用省略号来代表被隐藏的文字  */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* 侧滑样式 */
+  .message_content .remove {
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    font-size: 35rpx;
+    justify-content: center;
+    width: 150rpx;
+    color: #fff;
+    background-color: #fe3e2f;
+  }
+  .message_content .imp{
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    font-size: 35rpx;
+    justify-content: center;
+    width: 150rpx;
+    color: #fff;
+    background-color: rgba(250, 152, 40, 0.87);
+  }
+  .message_content .topping {
+    flex-grow: 0;
+    display: flex;
+    align-items: center;
+    font-size: 35rpx;
+    justify-content: center;
+    width: 150rpx;
+    color: #fff;
+    background-color: rgba(40, 113, 250, 0.87);
+  }
+
+  .message_content .main_message, .message_content .topping, .message_content .remove, .message_content .imp{
+    transform: translateX(450rpx);
+    transition: all 0.5s;
+  }
+  .touch-move-active .main_message,.touch-move-active .remove ,.touch-move-active .topping, .touch-move-active .imp{
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+/* 注意事项样式结尾 */
+
+
+/* 报修信息样式开头 */
+
+.main_message0{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+.firstrow{
+  display: flex;
+  height: 50rpx;
+  padding-top: 10rpx;
+  padding-left: 20rpx;
+}
+.equipname{
+  width: 250rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.equipnumber{
+margin-left: 85rpx;
+margin-top: 11rpx;
+font-size: 30rpx;
+color: #707070;
+font-style: italic;
+}
+.secondrow{
+  margin-top: 15rpx;
+  padding-left: 20rpx;
+  display: flex;
+}
+.manu{
+  font-size: 25rpx;
+  color: #707070;
+  width: 300rpx;
+}
+
+.place{
+  margin-left: 38rpx;
+  font-size: 25rpx;
+  color: #707070;
+  width: 300rpx;
+}
+
+.repairtime{
+  font-size: 25rpx;
+  color: #707070;
+  padding-left: 20rpx;
+}
+.repair_text{
+  padding-left: 20rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+.repaircontent{
+  
+  font-size: 30rpx;
+  display:  -webkit-box;
+  word-break: break-all;
+  top: 95rpx;
+  width: 600rpx;
+}
+
+.repaircontent.hide{
+  /*规定子元素的排列方向 */
+  -webkit-box-orient: vertical;
+  /*限制文本显示的行数  */
+  -webkit-line-clamp: 2;
+  /*实现多余的文字隐藏并用省略号来代表被隐藏的文字  */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.iffold{
+  font-size: 30rpx;
+  color: #707070;
+}
+
+.repair_imgall{
+  display: flex;
+  justify-content: left;
+}
+.repair_item{
+  display: flex;
+  position: relative;
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  margin-left: 20rpx;
+  margin-right: 5rpx;
+}
+.repair_img{
+  width: 190rpx;
+  height: 190rpx;
+}
+.fifthrow{
+  border-top: solid 1.5px #f0f0f0;
+  height: 60rpx;
+  display: flex;
+}
+.imp_r{
+  border-right: solid 1.5px #f0f0f0;
+  display: flex;
+  justify-content: center;
+  width: 325rpx;
+  font-size: small;
+}
+.solve{
+  display: flex;
+  width: 325rpx;
+  justify-content: center;
+  font-size: small;
+}
+
+.hover_all{
+  display: flex;
+  width: 325rpx;
+  justify-content: center;
+  background-color: #06c05f;
+}
+
+.imp_r_text, .solve_text{
+  margin-top: 12rpx;
+  margin-left: 20rpx;
+  font-weight: 700;
+  font-size:30rpx;
+  color: #707070;
+}
+
+.show{
+  color: rgba(250, 152, 40, 0.87);
+}
+
+.hover_solve{
+  margin-top: 12rpx;
+  margin-left: 20rpx;
+  font-weight: 700;
+  font-size:30rpx;
+  color: white;
+}
+
+/* 报修信息样式结尾 */
+@font-face {
+  font-family: 'iconfont';
+  src: url('data:font/woff2;charset=utf-8;base64,d09GMgABAAAAAAM0AA0AAAAAB2wAAALfAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCShEICoI4gioLDAABNgIkAxIEIAWFAgdFG2gGEZWbe8l+JmQq4xg7vtE8hHbbikcolpPrOlW0+U08PK6V7yeZ5SuyItQnCw6AJZDtriyQrwIWmhzbKkRdPUPj8u0qVwCbD5OyELcmpQ9xZNqvW1n2ofv5VgV+NPyF0+T2i/pZADbxBcDQ5fgX+IH84neZs3AO/N6zt9fGAgqsKJ20hk0ONLC3lENucN5uJTNZeyHg7W09Az6eeNLwtw70MAFJyIpQkFCKuKYinU9vcBV8Pv5ZHi2SKuPfbt2RaAPh2U/RT2nu133yewMCALMEMjKmCbBCFpimmIuGIqRUSnUNXJ38Ofmdi4RoEIBISJCfJ4BXRV1LoAIdNLEP14ECgKSaPJHZAZ72/gF0fk6AXnxxAQbh2RnoAaentTIE9nJN6opLffGF/abqXI6/HixaMKGrd+EhMY9N/fsaVi+6cZbQ0cmDR3r2fggBRAAj3DY4RUid6ER9zlTpy3XDw7pyfdUh4tGVDw+X6+jwQ+RVme7xyZryx4Wky5F88q4NgJtYOLMzIlb/P6y40Z/nqT8SWv/87+8plr3JxhLGjpsLUcUb+ITcKKJ5eurJV7SQnXaxT5GdK5dYzTfUtztt0kRQ3jv6BBAIuie3q6v5nv+tbtEx1lP3i9xHSwJBYx6/qxCgIP4zlAIoKECgslQFEjo6qAGM8VEAxporQGhZI0DSdFSArGUQoGi5EaDS9ThAQ8s7AToWxLAAXWPjmixKG7PR8TDKMJ6MsBXPRjkGFewCXpngDt4wivnDt77/WTvHMDiXktYaXRBsYFqepaqrxiE9P1jyg3kIQijOK/GUuolpib/YggYPDjG/sqxsI+FzeLCKG953vKjQfXQqyzpeU7U6UNeKUGWWELckviHjOCPyMgslrx24APBXrQ7qWq37+Nuu/OJL/hc4CZj0J8tPXC6VctLB87SwKLdUZH5cU4bLZrDFD1gAJqYxncy2g+1oyo1M9WE0mZYTlqZ4vGgAAA==') format('woff2'),
+      url('data:font/woff;charset=utf-8;base64,d09GRgABAAAAAAUgAA0AAAAAB2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAFBAAAABoAAAAckof7UUdERUYAAATkAAAAHgAAAB4AKQALT1MvMgAAAZwAAABGAAAAYDxISORjbWFwAAAB9AAAAEYAAAFK5i3pzmdhc3AAAATcAAAACAAAAAj//wADZ2x5ZgAAAkgAAAEXAAABOOoSlyRoZWFkAAABMAAAAC8AAAA2IAMYRWhoZWEAAAFgAAAAHAAAACQH3gOFaG10eAAAAeQAAAAQAAAAEgwAAABsb2NhAAACPAAAAAwAAAAMAFAAnG1heHAAAAF8AAAAHgAAACABFAA8bmFtZQAAA2AAAAFGAAACgl6CAQJwb3N0AAAEqAAAADMAAABFl5t3MnjaY2BkYGAAYumibdbx/DZfGbhZGEDgXuErFQT9v4GFgbkByOVgYAKJAgAYpwn5AHjaY2BkYGBu+N/AEMPCAAJAkpEBFbAAAEcKAm142mNgZGBgYGUwAGIQYAJiLiBkYPgP5jMAAA30AVEAAHjaY2BhYWCcwMDKwMDUyXSGgYGhH0IzvmYwYuQAijKwMjNgBQFprikMB54JPRNlbvjfwMDAfIehESjMiKREgYERAGdCDKcAAHjaY2GAABYoZmAAAACaAA142mNgYGBmgGAZBkYGEHAB8hjBfBYGDSDNBqQZGZieCT0T/f+fgQFCS36UfA9VDwSMbAxwDiMTkGBiQAWMDMMeAADTRQrEAAAAAAAAAAAAAABQAJx42mNgYmD438DCwNzAIMGgz8DAqqSux6iuZmJux2huZiQuxyguJsLOx8jOxqzOLiYuJm5mDoJq6mrmbOwgyMSQER/Tp66hod4XE38BwZw1KdHe2stS3s7Rzl2Ll5FJICjCwVZOqAFdHYTJWDklRtHA2ss6INTGhcvQ3kPDLN8/xUiJAegguPs4GIQYZBjUQK40FzUWVVRSMxVUFBRhY1dWNDU2ZRRVFlUWNDEzN2aVZ2QXV2c3VzdnNBITFVQ2VTYN+vbvrZg8C4O0KOu/t9/+zvoWBGQxXgk/1KO4bp1i72EmSTH5oG8nvgXJizEK/3srIscc9I1pR9A3RmEg8/EG2c5DMTGHOmUZJ8uLAfUHAZ0FAOpHTX8AeNp9kM1Kw0AUhc/0T21BxILrWRVBSH+WpbtC3blwUddtOklbkkyYTAtdunXlA7j1MXwAn0Fw5YN4Gq8IFZqQyzfn3nNmJgAu8QmFn6eNa2GFU9wJV3CCWLhK/VG4Rn4RrqOFN+EG9Q/hJm7USLiFtnpmgqqdcdUp0/ascIGRcAXneBCuUrfCNfKTcB1XeBVuUH8XbmKKL+EWOmqJMRwMZvCsC2jMsWNdIWRuhqisHhg7M/Nmoec7vQptFtmM4r+pv9Y942JskDDacWniTTJzRy1HWlOmORQc2bc0+gjQo2xcsbKZ7ge9o/Zb2rMy4vCeBbY85oCqp1Hzc7SnpInEGF4hIWvkZW9NJaQeMNZkxv3+lWIbD7yPdORsqifc1iSJ1bmzaxN6Di/LPXIM0eUbHaQH5eFTjnmfD7vdSAKC0Kb4Bg9qcIcAAHjaY2BigAAuMMnIgA5YwaJMjEyMzFyVmeWJeckZqXnpvFUZ+XnpKZmJeSmZhaUAfv0J1gAAAAAB//8AAgABAAAADAAAABYAAAACAAEAAwAEAAEABAAAAAIAAAAAeNpjYGBgZACCq0vUOUD0vcJXKjAaAEC5BmQAAA==') format('woff'),
+      url('iconfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-yiwancheng:before {
+  content: "\e612";
+}
+
+.icon-zhongdiandiqu:before {
+  content: "\e615";
+}
+
+

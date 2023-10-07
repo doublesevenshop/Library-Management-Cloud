@@ -1,0 +1,116 @@
+/* pages/askrepair/askrepair.wxss */
+page{
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+
+.all{
+    background-color: white;
+    width: 650rpx;
+    margin-top: 50rpx;
+    margin-bottom: 50rpx;
+    /* border:solid 1px #707070; */
+    border-radius: 30rpx;
+}
+button{
+    margin-bottom: 50rpx;
+    background-color: #5C6BC0;
+    color: white;
+}
+
+.repair_text{
+    width: 550rpx;
+    height: 300rpx;
+    border: solid 1px #707070;
+    margin-top: 25rpx;
+    margin-bottom: 25rpx;
+    margin-left: 45rpx;
+    padding-top: 10rpx;
+    padding-left: 10rpx;
+    border-radius: 30rpx;
+    
+}
+
+.basic_text{
+    font-weight: 700;
+    font-size: 40rpx;
+    margin-left: 25rpx;
+    margin-top: 15rpx;
+    color: #707070;
+}
+
+.first{
+    margin-top: 50rpx;
+}
+
+.upload{
+    margin-top: 15rpx;
+}
+
+.upload_text{
+    font-size: 40rpx;
+    font-weight: 700;
+    margin-left: 25rpx;
+    color: #707070;
+}
+
+.recovery_other_line {
+    display: flex;
+    line-height: 124rpx;
+  }
+  .recovery_other_line .upload_img {
+    width: 80rpx;
+    height: 80rpx;
+  }
+  .recovery_other_line .other_text {
+    width: 120rpx;
+    font-size: 28rpx;
+    color: #000;
+  }
+  .choose_upload_view {
+    width: 125rpx;
+    height: 125rpx;
+    display: flex;
+    justify-content: left;
+  }
+  .choose_upload_item {
+    position: relative;
+    margin-top: 32rpx;
+    margin-bottom: 25rpx;
+    margin-left: 25rpx;
+    width: 125rpx;
+    height: 125rpx;
+    display: flex;
+    border-radius: 20rpx;
+  }
+  .choose_upload_view .choose_upload_img {
+    width: 125rpx;
+    height: 125rpx;
+  }
+  .choose_upload_view .remove_img_icon {
+    padding: 4rpx;
+    position:absolute;
+    top: -15rpx;
+    right: -13rpx;
+    width: 28rpx;
+    height: 28rpx;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+  }
+  .other_upload {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25rpx;
+    margin-bottom: 25rpx;
+    margin-left: 25rpx;
+    border: solid 1px #707070;
+    width: 125rpx;
+    height: 125rpx;
+    border-radius: 20rpx;
+  }
+
+  .uploadnow{
+    border-radius: 40rpx;
+  }

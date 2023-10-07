@@ -1,0 +1,51 @@
+<!--miniprogram/pages/infodetail/infodetail.wxml-->
+<view class="all">
+  <view class="P_message"> 资产名称：{{datainfo.asset_name}}</view>
+  <view class="imagesize">
+  <image  wx:for="{{datainfo.file1}}" src="{{item}}"  bindload="imageLoad"
+  data-index="{{ index }}"style="width:{{ images[index].width }}rpx; height:{{ images[index].height }}rpx;"></image>
+  </view >
+  <view class="P_small add">资产编号：{{datainfo.asset_id}}</view>
+  <view class="P_small">资产分类：{{datainfo.type_name}}</view>
+  <view class="P_small">品牌：{{datainfo.brand}}</view>
+  <!--<view class="P_small">合同号：{{datainfo.contract_no}}</view>-->
+  <!--<view class="P_small">制单时间：{{datainfo.create_time}}</view>-->
+  <!--<view class="P_small">制单人：{{datainfo.create_user}}</view>-->
+  <!--<view class="P_small">使用/管理部门：{{datainfo.department}}</view>-->
+  <view class="P_small">出厂号：{{datainfo.factory_no}}</view>
+  <!--<view class="P_small">经办人：{{datainfo.manager}}</view>-->
+  <view class="P_small">厂家：{{datainfo.manufacturer}}</view>
+  <!--<view class="P_small">取得日期：{{datainfo.obtain_time}}</view>-->
+  <!--<view class="P_small">原经办人：{{datainfo.old_manager}}</view>-->
+  <!--<view class="P_small">原存放地点：{{datainfo.old_storage_location}}</view>-->
+  <!--<view class="P_small">原使用人：{{datainfo.old_user}}</view>-->
+  <view class="P_small">规格型号：{{datainfo.specification}}</view>
+  <view class="P_small">存放地点：{{datainfo.storage_location}}</view>
+
+  <!--<view class="P_small">供货商：{{datainfo.supplier}}</view>-->
+
+  <!--<view class="P_small">使用人：{{datainfo.user}}</view>-->
+
+
+
+
+
+  <view class="P_small">使用说明：{{datainfo.file3}}</view>
+  <view class="P_small">故障说明：{{datainfo.file4}}</view>
+  <view class="P_small">是否报修：{{datainfo.del_flag}}</view>
+
+  <view class="telephone">
+      <view><icon class="iconfont icon-user" style="font-size:20px;color:#5BB7DB"></icon></view>
+      <textarea class="change_use" placeholder="点击更改使用说明" bindinput="myIpt" cols="30" rows="10"></textarea>
+  </view>
+
+  <view class="binglie">
+    <button bindtap="clickBtn1" class="btn1"  hover-class="plain-hover" >上传设备图片</button>
+    <button class="btn1"  hover-class="plain-hover" bindtap="clickBtn3">上传使用说明</button>
+  </view>
+  <view class="binglie">
+  <button class="btn2"  hover-class="plain-hover" bindtap="clickBtn5">申请报修</button>
+  <!-- <button class="btn2"  hover-class="plain-hover" bindtap="clickBtn6">取消报修</button> -->
+  </view>
+
+</view>

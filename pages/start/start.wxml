@@ -1,0 +1,64 @@
+<!--pages/demo4/demo4.wxml-->
+<view class="content">
+  <view>
+        <view class="weui-search-bar">
+            <!--二维码-->
+            <view class="scan-button" bindtap="scanCode">
+            <image class="scan-icon" src="/icon/QR.jpg"></image>
+            </view>
+
+            <view class="weui-search-bar__form">
+            <!-- 搜索框 -->
+                <view class="weui-search-bar__box" >
+                    <image class="weui-icon-search_in-box" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/%E6%90%9C%E7%B4%A2--1.png?sign=fe28b92365828ccff30935904c5397a2&t=1645724908" mode="widthFix"></image>
+                    <!-- <icon class="weui-icon-search_in-box" type="search" size="14"></icon> -->
+                    <input type="text" class="weui-search-bar__input" bindtap='search' placeholder="搜索设备名称"
+                   />
+                </view>
+            </view>
+        </view>
+    </view>
+
+
+<!--通过判断 orderOrBusiness 数据的值来确定是否添加 P_active 类名，以实现选中标签高亮显示的效果-->
+<!-- e是view对象，e.currentTarget.dataset.id 表示获取了 data-id 属性的值-->
+<!--P_order P_active 自定义模板-->
+  <view class="P_title">
+    <view class="{{orderOrBusiness=='order'?'P_order P_active':'P_order'}}" bindtap="tabChange" data-id="order">
+      生产厂家  
+    </view>
+    <view class="{{orderOrBusiness=='business'?'P_business P_active':'P_business'}}"  bindtap="tabChange" data-id="business">
+      设备类型
+    </view>
+  </view>
+  <view class="all">
+  <view class="P_order_P" wx:if="{{orderOrBusiness=='order'}}">
+   
+      <block wx:for="{{menu}}" wx:key="">
+        <view class="menuList">
+          <view class="{{index==orderType?'selected':''}}" data-index="{{index}}" bindtap="turnMenu" data-name="{{item.name}}">{{item.name}}</view>
+        </view>
+      </block>
+   
+
+  
+ </view>
+
+ <view class="P_order_P" wx:if="{{orderOrBusiness=='business'}}">
+
+ 
+      <block wx:for="{{dataList}}" wx:key="index" >
+        <view class="menuList" >
+          <view class="{{index==businType?'selected':''}}" data-index="{{index}}"  bindtap="turnAsset" 
+          data-name="{{item.name}}">
+            <view>{{item.name}}</view>
+            <!-- <view class="P_small">{{item.manufacturer}}</view>
+            <view class="P_small">{{item.type_name}}</view>
+            <view class="P_small">{{item.asset_id}}</view> -->
+          </view>
+        </view>
+      </block>
+ 
+ </view>
+ </view>
+</view>

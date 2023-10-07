@@ -1,0 +1,168 @@
+/* pages/register/register.wxss */
+page{
+  background-color: #5C6BC0;
+}
+/* 
+.container1{
+  position: absolute;
+} */
+
+@font-face{
+  font-style: normal;
+  font-family: 'font';
+  src: url('https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/FontName.woff?sign=00d91f1140f55384f2f42bec5c7703c1&t=1645702126')format('truetype');
+}
+
+.tuguanyun{
+  font-family: "font";
+  color:white;
+  font-size: 104.17rpx;
+  text-align: center;
+  margin-top: 150rpx;
+  margin-bottom: -150rpx;
+}
+
+.logo{
+  width: 750rpx;
+  display:flex;
+  justify-content: center;
+}
+
+.library{
+width: 377.08rpx; 
+}
+
+.shebei{
+  font-family: "font";
+  color: white;
+  font-size: 41.67rpx;
+  text-align: center;
+  margin-top: -65rpx
+}
+
+.moto1{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 25rpx; /* 上间距 */
+}
+
+
+.icon1{
+  color: white;
+  width: 179rpx;
+  margin-left: 65rpx;
+  margin-top: 75rpx;
+}
+
+.input1{
+  border-bottom: solid;
+  width: 481.25rpx;
+  height: 60.42rpx;
+  color:#fff;
+  font-weight: 2px;
+  margin-top: 25rpx;
+  margin-left: 13.5rpx;
+}
+
+.moto2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 25rpx;
+  }
+
+ .icon2{
+  color: white;
+  width: 60.42rpx;
+  margin-left: 104rpx;
+  margin-top: 32rpx;
+}
+.input2{
+  border-bottom: solid;
+  width: 481.25rpx;
+  height: 60.42rpx;
+  color:#fff;
+  font-weight: 2px;
+  margin-top: 25rpx;
+  margin-left: 13.5rpx;
+}
+ .moto3{
+  position: absolute;
+  left:14%;
+  font-family: "font";
+  margin-top: 100.625rpx;
+  width:545.83rpx;
+  color:#5C6BC0;
+  background-color: white;
+  border-radius: 98rpx;
+  height: 93.75rpx;
+  border-style: solid;
+  border: white;
+  font-size: 41.67rpx;
+  font-family: initial;
+}
+
+.freemodel{
+  position: absolute;
+  left:42.5%;
+  font-family: "font";
+  font-size: 30rpx;
+  margin-top: 250.625rpx;
+  color: white;
+  text-decoration-line: underline;
+}
+
+.hovermodel{
+    position: absolute;
+    left:42.5%;
+    font-family: "font";
+    font-size: 30rpx;
+    margin-top: 250.625rpx;
+    color: rgb(87, 250, 255);
+    text-decoration-line: underline;
+}
+
+.button-hover{
+  position: absolute;
+  left:14%;
+  font-family: "font";
+  margin-top: 100.625rpx;
+  width:545.83rpx;
+  color:white;
+  background-color: #5C6BC0;
+  border-radius: 98rpx;
+  height: 93.75rpx;
+  border-style: solid;
+  border:5rpx solid white;
+  font-size: 41.67rpx;
+  font-family: initial;
+}
+
+.title2{
+  font-family: "font";
+  position: relative;
+  text-align:center;
+  font-size: 45rpx;
+  top:18%;
+}
+
+.plain-hover{
+  position: relative;
+  top:80%;
+  box-shadow:0px 0px 10px #bbbec4 inset; 
+}
+
+.phcolor{
+  color:white
+}
+
+.content{
+  position: absolute;
+  color:white;
+  font-size: 36rpx;
+  left: 60rpx;
+  top: 25%;
+  height: 70rpx;
+  margin-left: 20rpx;
+}

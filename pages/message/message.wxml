@@ -1,0 +1,100 @@
+<!--pages/message/message.wxml-->
+<view class="pic1">
+  <text class="text1">留言板</text>
+</view>
+
+<view class="M_title">
+    <view class="{{RepairOrNote=='Repair'?'M_Repair M_active':'M_Repair'}}" bindtap="tabChange" data-id="Repair">
+      <text class="M_text">报修信息</text>
+    </view>
+    <view class="{{RepairOrNote=='Note'?'M_Note M_active':'M_Note'}}"  bindtap="tabChange" data-id="Note">
+      <text class="M_text">注意事项</text>
+    </view>
+  </view>
+
+<view class="line"></view>
+
+<view class="M_Repair_M" wx:if="{{RepairOrNote=='Repair'}}">
+   
+   <view wx:for-item="R_item"
+    data-id="{{R_item._id}}" 
+    data-idx="{{index}}" 
+    data-list="{{R_item.file}}"
+    class="row" wx:for="{{datalist0}}"  wx:key="index" >
+     <view class="main_message0">
+       <view class="firstrow">
+         <view class="equipname">{{R_item.asset_name}}</view>
+         <view class="equipnumber">编号：{{R_item.asset_id}}</view>
+       </view>
+ 
+       <view class="secondrow">
+         <view class="manu">生产商：{{R_item.manufacturer}}</view>
+         <view class="place">位置：{{R_item.storage_location}}</view>
+       </view>
+       <view class="repairtime">报修时间：{{R_item.time}}</view>
+       <view class="repair_text">
+        故障描述：
+        <view class="repaircontent {{R_item.foldStat?'hide':''}}" style="white-space: pre-wrap;">{{R_item.repair_content}}</view>
+        <view class="iffold" bindtap="fold0" data-id="{{R_item._id}}" data-fold="{{R_item.foldStat}}"  data-num="{{index}}">
+        {{R_item.foldStat?'查看全部':'收起'}}</view>
+       </view>
+       <view class="repair_imgall">
+          <view wx:for="{{R_item.file}}" wx:for-item="P_item" wx:key="index" class="repair_item">
+                <image src="{{P_item}}" class="repair_img" data-index="{{index}}" data-id="{{P_item}}" 
+                data-file="{{R_item.file}}" bindtap="previewBigImage"></image>
+          </view>
+      </view>
+       <view class="fifthrow">
+         <view class="imp_r" bindtap="im_r" data-id="{{R_item._id}}" data-idx="{{index}}" data-ii="{{R_item.isImport}}">
+          <icon class="iconfont icon-zhongdiandiqu" style="{{R_item.isImport?'font-size:40rpx;color:rgba(250, 152, 40, 0.87)':'font-size:40rpx;color:#707070'}}"></icon>
+          <view class="imp_r_text {{R_item.isImport?'show':''}}" >
+          {{R_item.isImport? "取消重点":"标为重点"}}
+          </view>
+         </view>
+         <view class="solve" hover-class="hover_all" bindtap="solved" data-id="{{R_item._id}}" data-oldid="{{R_item.oldid}}" data-file="{{R_item.file}}"data-idx="{{index}}">
+          <icon class="iconfont .icon-yiwancheng"  style="font-size:40rpx;color:#06c05f"></icon>
+          
+          <view class="solve_text" hover-class="hover_solve">
+            维修完毕
+          </view>
+         </view>
+       </view>
+       
+     </view>
+   </view>
+ </view>
+
+
+<view class="M_Repair_M" wx:if="{{RepairOrNote=='Note'}}">
+  <!-- 非置顶数据循环遍历 -->
+  <view data-id="{{item._id}}" 
+   data-idx="{{index}}" 
+   class="row" wx:for="{{datalist}}" wx:key="index">
+    
+    <view data-index="{{index}}" class="message_content {{ item.isTouchMove ? 'touch-move-active' : '' }}" bindtouchstart="touchStart" bindtouchmove="touchMove">
+      <view class="main_message">
+        <view class="M_firstrow">
+          <view class="showname">用户名：{{item.author}}</view>
+          <icon class="iconfont icon-zhongdiandiqu" style="{{item.isImport? 'font-size:50rpx;color:rgba(250, 152, 40, 0.87);margin-left: 200rpx;':'font-size:50rpx;color:white;margin-left: 200rpx;'}}"></icon>
+        </view>
+        <view class="showtime">发送时间：{{item.time}}</view>
+        <view class="showcontent {{item.foldStat?'hide':''}}" style="white-space: pre-wrap;">留言内容:
+{{item.content}}</view>
+        <view class="iffold" bindtap="fold" data-id="{{item._id}}" data-fold="{{item.foldStat}}"  data-num="{{index}}">
+        {{item.foldStat?'查看全部':'收起'}}</view>
+      </view>
+      <view class="imp" bindtap="im" data-id="{{item._id}}" data-idx="{{index}}" data-ii="{{item.isImport}}">{{item.isImport? "取消重点":"标为重点"}}</view>
+      <view class="topping" bindtap="up" data-id="{{item._id}}" data-idx="{{index}}" data-it="{{item.isTopping}}">
+      {{item.isTopping? "取消置顶":"置顶"}}</view>
+      <view class="remove" bindtap="del" data-id="{{item._id}}" data-idx="{{index}}">删除</view>
+    </view>
+
+  </view>
+
+</view>
+
+<view class="pic2" bindtap="onReachSend">
+        <view class="pic_2_1"></view>
+        <view class="pic_2_2"></view>
+        <view class="pic_2_3"></view>
+</view>

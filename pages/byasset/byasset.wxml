@@ -1,0 +1,17 @@
+<!--pages/byasset/byasset.wxml-->
+<view class="P_order_P">
+ 
+ <block wx:for="{{busidetail}}" wx:key="index" >
+   <view class="menuList" bindtap="toFoodDetail" data-name="{{item.asset_name}}">
+     <view class="P_message">
+       <view>{{item.asset_name}}</view>
+       <view class="P_small">{{item.manufacturer}}</view>
+       <view class="P_small">{{item.type_name}}</view>
+       <view class="P_small">{{item.asset_id}}</view>
+     </view>
+   </view>
+ </block>
+ 
+ </view>
+ 
+ 

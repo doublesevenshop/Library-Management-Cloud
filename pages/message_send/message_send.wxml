@@ -1,0 +1,62 @@
+<!-- 第一层 -->
+<view class="pic1">
+  <image class="pic_1" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_message/%E8%83%8C%E6%99%AF%201.png?sign=634e67117959be41066367e121d6f1aa&t=1645706181" mode="widthFix"></image>
+</view>
+
+<view class="pic2">
+</view>
+
+<!-- 第二层 -->
+<view class="pic3">
+  <image class="pic_3" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_message/%E6%AD%A3%E6%96%B9%E5%BD%A2.png?sign=5c6ad4f65d52de5f510a457a913757d8&t=1645706213" mode="widthFix"></image>
+</view>
+<view class="pic4">
+  <image class="pic_4" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_message/%E4%BA%94%E8%BE%B9%E5%BD%A2.png?sign=f1cd6bd1cc6a9bd33f1de9b3c744fdec&t=1645706228" mode="widthFix"></image>
+</view>
+<view class="pic5">
+  <image class="pic_5" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_message/%E6%A4%AD%E5%9C%86.png?sign=4698dcde0ec4a5557a481d431c77d716&t=1645706244" mode="widthFix"></image>
+</view>
+<view class="pic6">
+  <image class="pic_6" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_message/%E4%B8%89%E8%A7%92%E5%BD%A2.png?sign=25c3cc33f246a638737b8ecb2e352a68&t=1645706255" mode="widthFix"></image>
+</view>
+<view class="pic7">
+  <image class="pic_7" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_message/%E5%9C%86%E5%BD%A2.png?sign=4c1a0146ea1756ca80cc8bbf1a1147ba&t=1645706506" mode="widthFix"></image>
+</view>
+
+<!-- <view class="pat1">
+  <text class="pat_1">当前留言类型</text>
+</view> -->
+<view class="pat2">
+  <text class="pat_2">编辑留言</text>
+</view>
+
+<view class="pat6"  >
+</view>
+
+<!-- 第三层 -->
+<view class="pic8" >
+  <image class="pic_8" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_message/%E5%90%8D%E6%A1%86.png?sign=4f4bade499efc1574a7bb9905744dbed&t=1645706302" mode="widthFix"></image>
+</view>
+
+<view class="pat14" >
+  <image src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images_message/%E5%8F%91%E9%80%81%403x.png?sign=e79708c451c658e6fa17d98524f54257&t=1648807376" class="pat_14" mode="widthFix" ></image>
+</view>
+
+<form bindsubmit="btnsub" class="pat5">
+  <textarea name="content" class="pat_5" type="text" placeholder="请输入留言内容"></textarea>
+  <button class="send" form-type="submit"></button>
+</form>
+<!-- 第四层 -->
+<button class="avatar-wrapper">
+        <image class="avatar" src="{{avatarUrl}}"></image>
+</button> 
+
+
+<view class='userinfo'>
+        
+        <view class='title'>
+        {{username}}
+        </view>
+        <view class="message_type">留言类型：注意事项</view>
+        
+</view>

@@ -1,0 +1,19 @@
+<!--pages/demo4/demo4.wxml-->
+<view class="content">
+
+
+
+ 
+<block wx:for="{{menudetail}}" wx:key="index" >
+  <view class="menuList menuList2" bindtap="toFoodDetail" data-name="{{item.asset_name}}">
+    <view class="P_message">
+      <view style="font-weight: 700;">{{item.asset_name}}</view>
+      <view class="P_small">{{item.manufacturer}}</view>
+      <view class="P_small">{{item.type_name}}</view>
+      <view class="P_small">{{item.asset_id}}</view>
+    </view>
+  </view>
+</block>
+
+
+</view>

@@ -1,0 +1,63 @@
+
+{
+  "pages": [ 
+    "pages/register/register",
+    "pages/s/s",
+    "pages/start/start",
+    "pages/message/message",
+    "pages/message_send/message_send",
+    
+    "pages/mine/mine",
+    "pages/bymanu/bymanu",
+    "pages/byasset/byasset",
+
+   
+    "pages/process/process",
+   
+    "pages/newdevice/newdevice",
+    "pages/suggestion/suggestion",
+    "pages/us/us",
+   
+    "pages/infodetail/infodetail",
+    "pages/askrepair/askrepair",
+    
+    "pages/search/search",
+    
+    "pages/detail/detail",
+    "pages/test/test"
+       
+  ],
+  "window": {
+    "backgroundColor": "#8C9EFF",
+    "navigationBarBackgroundColor": "#5C6BC0",
+    "navigationBarTitleText": "北邮图书馆设备管理",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#575757",
+    "selectedColor": "#279FDE",
+    "list": [
+      {
+        "pagePath": "pages/start/start",
+        "text": "所有设备",
+        "iconPath": "pages/images/主页1 @2x.png",
+        "selectedIconPath": "pages/images/主页2 @2x.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "留言板",
+        "iconPath": "pages/images/留言板1 @2x.png",
+        "selectedIconPath": "pages/images/留言板2 @2x.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/images/个人中心1 @2x.png",
+        "selectedIconPath": "pages/images/个人中心2 @2x.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

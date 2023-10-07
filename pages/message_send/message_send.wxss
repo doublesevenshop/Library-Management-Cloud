@@ -1,0 +1,264 @@
+/* pages/message_send/message_send.wxss */
+.pic_1{
+  width: 750rpx;
+}
+.pic1{
+  width: 750rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.pic2{
+  width: 750rpx;
+  height:  1175rpx;
+  background-color:  #f0f0f0;
+  position: absolute;
+  left: 0;
+  top: 281.25rpx;
+}
+
+.pic_3{
+  width: 129.17rpx;
+}
+.pic3{
+  width: 129.17rpx;
+  position: absolute;
+  left: 31.25rpx;
+  top: 27.08rpx;
+}
+
+.pic_4{
+  width: 110.42rpx;
+}
+.pic4{
+  width: 110.42rpx;
+  position: absolute;
+  left: 131.42rpx;
+  top: 124.125rpx;
+}
+
+.pic_5{
+  width: 93.75rpx;
+}
+.pic5{
+  width: 93.75rpx;
+  position: absolute;
+  left: 354.17rpx;
+  top: 60.42rpx;
+}
+
+.pic_6{
+  width: 131.25rpx;
+}
+.pic6{
+  width: 131.25rpx;
+  position: absolute;
+  left: 577.979rpx;
+  top: -16.96rpx;
+}
+
+.pic_7{
+  width: 52.08rpx;
+}
+.pic7{
+  width: 52.08rpx;
+  position: absolute;
+  left: 668.75rpx;
+  top: 210.42rpx;
+}
+
+.pic_8{
+  width: 562.5rpx;
+}
+.pic8{
+  width: 562.5rpx;
+  position: absolute;
+  left: 131.25rpx;
+  top: 87.5rpx;
+}
+
+.pic_9{
+  width: 177.08rpx;
+}
+
+.pat_1{
+  color: #5C6BC0;
+  font-size: 45rpx;
+  padding-left: 5rpx;
+  font-family: "微软雅黑";
+  font-weight: 900;
+}
+
+
+
+.pat1{
+  width: 287.5rpx;
+  position: absolute;
+  left: 235rpx;
+  top: 314.58rpx;
+}
+
+.pat_2{
+  color: #5C6BC0;
+  font-size: 48rpx;
+  padding-left: 16rpx;
+  font-family: "微软雅黑";
+  font-weight: 900;
+}
+.pat2{
+  width: 287.5rpx;
+  align-items: center;
+  position: absolute;
+  left: 272rpx;
+  top: 345rpx;
+}
+
+.pat_3{
+display: flex;
+padding-left: 72rpx;
+padding-top: 15rpx;
+font-size: 40rpx;
+color: black;
+font-weight: 700;
+}
+
+
+.pat3{
+  background-color: white;
+  border-radius: 20rpx;
+  width: 295.83rpx;
+  height: 83rpx;
+  position: absolute;
+  left: 47.92rpx;
+  top: 400rpx;
+  
+}
+
+.pat3_2{
+  background-color: #8C9EFF;
+  border-radius: 20rpx;
+  width: 295.83rpx;
+  height: 83rpx;
+  position: absolute;
+  left: 47.92rpx;
+  top: 400rpx; 
+}
+.pat_4{
+  display: flex;
+  padding-left: 72rpx;
+  padding-top: 15rpx;
+  font-size: 40rpx;
+  color: black;
+  font-weight: 700;
+}
+.pat4{
+  background-color: white;
+  border-radius: 20rpx;
+  width: 295.83rpx;
+  height: 83rpx;
+  position: absolute;
+  left: 227rpx;
+  top: 400rpx;
+}
+
+.pat_5{
+  width: 580rpx;
+  left: 37rpx;
+  top: 20rpx;
+  height: 450rpx;
+  background-color: white;
+}
+.pat5{
+  width: 654.17rpx;
+  position: absolute;
+  left: 47.92rpx;
+  height: 480rpx;
+  border-radius: 71rpx;
+  background-color: white;
+  top: 475rpx;
+}
+
+.send:not([size='mini']){
+  width: 145.83rpx;
+  height: 145.83rpx;
+  border-radius: 100rpx;
+  margin-top: 176rpx;
+  background-color: blue;
+  opacity: 0;
+
+}
+
+
+.pat6{
+  width: 145.83rpx;
+  height: 145.83rpx;
+  background-color: #5C6BC0;
+  border-radius: 100rpx;
+  position: absolute;
+  left: 302.08rpx;
+  top: 1100rpx;
+}
+
+
+.pat_7{
+  width: 750rpx;
+}
+.pat7{
+  width: 750rpx;
+  position:absolute;
+  left: 0;
+  top: 1227.08rpx;
+}
+
+.pat_14{
+  width: 100rpx;
+}
+.pat14{
+  width: 100rpx;
+  position:absolute;
+  left: 318.75rpx;
+  top: 1125rpx;
+}
+
+.userinfo {
+  position: absolute;
+  width: 750rpx;
+  top: 98rpx;
+}
+
+
+.userinfo .title {
+  margin-left: 250rpx;
+  font-size: 50rpx;
+  font-family:SimHei;
+  font-weight: 900;
+  color:#575757;
+}
+
+.message_type{
+  margin-left: 250rpx;
+  margin-top: 6rpx;
+  font-size: 25rpx;
+  font-family:SimHei;
+  color: #575757;
+}
+
+.avatar-wrapper:not([size='mini']){
+    overflow: hidden;
+    margin-left: 25rpx;
+    border-radius: 50%;
+    box-shadow:3px 3px 4px 1px #5C6BC0;
+    position: absolute;
+    left: 30rpx;
+    top: 66.67rpx;
+    width: 177rpx;
+    height: 177rpx;
+}
+
+.avatar{
+    margin-left: -47rpx;
+    margin-top: -16rpx;
+    width: 177rpx;
+    height: 177rpx;
+}
