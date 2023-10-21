@@ -64,6 +64,37 @@ page {
   height: 122px;
   background-color: gainsboro;
 }
+
+/* 悬浮按钮 */
+.custom-button {
+  /* 共享的样式属性 */
+  max-width: 300rpx;
+  height: 80rpx;
+  background-color: #003399; /* 设置背景颜色 */
+  border-radius: 30rpx; /* 通过调整这个值来改变圆角的大小，确保它不超过按钮高度的一半 */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; 
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* 可以为不同位置的按钮添加自定义样式 */
+.button-position-1 {
+  position: absolute;
+  left: 45rpx; /* 调整数值控制按钮的位置 */
+  bottom: 150rpx;
+}
+
+.button-position-2 {
+  position: absolute;
+  right: 45rpx; /* 调整数值控制按钮的位置 */
+  bottom: 150rpx;
+}
+
 /* 状态2参数设置 */
 .type_2{
   display: flex;

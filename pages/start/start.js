@@ -83,14 +83,14 @@ Page({ //页面配置对象
   //处理用户在小程序页面上的点击事件
 
   turnMenu(res) {
-     var maname  = res.currentTarget.dataset.name
-   console.log(res.currentTarget.dataset)
+    var maname  = res.currentTarget.dataset.name
+    console.log(res.currentTarget.dataset)
     var type = res.currentTarget.dataset.index;
     wx.setStorageSync(this.data.keymanu, maname);
     wx.navigateTo({
         url: '../bymanu/bymanu',
     })
-    this.setData({
+    this.setData({ //数据从逻辑层发送到视图层(异步），同时改变对应的 this.data 的值（同步）
         orderType: type,
     })
   },
@@ -108,12 +108,16 @@ Page({ //页面配置对象
    })
  },
   
-  // 扫一扫按钮点击事件处理程序
+ // 扫一扫按钮点击事件处理程序
   scanCode() {
     wx.scanCode({
       success(res) {
         // 处理扫描结果
-        console.log(res.result);
+        const deviceId = res.result;
+        console.log("识别ID：" + deviceId);
+        wx.navigateTo({
+          url: '../detail/detail?id=' + deviceId, //传id
+        });
       },
       fail(error) {
         console.error(error);
@@ -124,6 +128,7 @@ Page({ //页面配置对象
       },
     });
   },
+
 
 
 

@@ -1,13 +1,9 @@
 
-<!-- 状态1 -->
+<!-- 状态1 -->  
 <view class="type_1" hidden="{{type_1}}">
   
-
-
   <view class="P_message" style="font-weight: 700;font-size: 40rpx;margin-top: 50rpx; color:#707070 ;">{{datainfo1.asset_name}}</view>
     <view class="picture">
-
-
 
 <image  wx:for="{{datainfo1.file1}}" src="{{item}}" 
 data-index="{{ index }}"style="width:{{ images[index].width }}rpx; height:{{ images[index].height }}rpx;"></image>
@@ -27,7 +23,10 @@ data-index="{{ index }}"style="width:{{ images[index].width }}rpx; height:{{ ima
   <view class="P_small">存放地点：{{datainfo1.storage_location}}</view>
   <view class="P_small">品牌：{{datainfo1.brand}}</view>
   <view class="P_small">生产厂家：{{datainfo1.brand}}</view>
- 
+
+  <button class="custom-button button-position-1">报修</button>
+  <button class="custom-button button-position-2">巡检</button>
+
 </view>
 <!-- 状态2 -->
 <view class="type_2" hidden="{{type_2}}">

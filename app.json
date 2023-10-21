@@ -1,35 +1,26 @@
-
 {
-  "pages": [ 
+  "pages": [
     "pages/register/register",
     "pages/s/s",
     "pages/start/start",
     "pages/message/message",
     "pages/message_send/message_send",
-    
     "pages/mine/mine",
     "pages/bymanu/bymanu",
     "pages/byasset/byasset",
-
-   
     "pages/process/process",
-   
     "pages/newdevice/newdevice",
     "pages/suggestion/suggestion",
     "pages/us/us",
-   
     "pages/infodetail/infodetail",
     "pages/askrepair/askrepair",
-    
     "pages/search/search",
-    
     "pages/detail/detail",
     "pages/test/test"
-       
   ],
   "window": {
     "backgroundColor": "#8C9EFF",
-    "navigationBarBackgroundColor": "#5C6BC0",
+    "navigationBarBackgroundColor": "#003399",
     "navigationBarTitleText": "北邮图书馆设备管理",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true
