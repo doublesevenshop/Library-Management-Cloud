@@ -20,6 +20,8 @@
     "tabIndent": "insertSpaces",
     "tabSize": 2
   },
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+  "cloudfunctionRoot": "cloudfunctions/",
   "libVersion": "3.0.2",
   "packOptions": {
     "ignore": [],

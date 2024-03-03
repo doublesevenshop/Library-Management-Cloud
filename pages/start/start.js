@@ -35,7 +35,7 @@ Page({ //页面配置对象
   getData(num = 10, page = 0) { //这两个函数使用 wx.cloud.callFunction 
     //方法调用云函数来获取数据，并将获取的数据追加到 dataList 和 menu 数组中。
     console.log("getdata()") 
-    wx.cloud.callFunction({ // ?
+    wx.cloud.callFunction({ 
       name: "getdata", 
       data: {
         num: num,
@@ -116,7 +116,7 @@ Page({ //页面配置对象
         const deviceId = res.result;
         console.log("识别ID：" + deviceId);
         wx.navigateTo({
-          url: '../detail/detail?id=' + deviceId, //传id
+          url: '../detail/detail?id=' + deviceId + '&source=scan', //传id
         });
       },
       fail(error) {

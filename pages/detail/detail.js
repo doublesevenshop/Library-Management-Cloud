@@ -48,33 +48,32 @@ Page({
     })
   },
 
-  // getStorageSync: function () {
-  //   var that = this
-  //   let key = 'key'
-  //   console.log("2")
-  //   var data = wx.getStorageSync(key)
+  getStorageSync: function () {
+    var that = this
+    let key = 'key'
+    var data = wx.getStorageSync(key)
 
-  //     console.log(data)
-  //   wx.cloud.callFunction({
-  //     name: "getdatabyasset_name2",
-  //     data: {
-  //       name: data
-  //     }
-  //   }).then(res => {
+      console.log(data)
+    wx.cloud.callFunction({
+      name: "getdatabyasset_name2",
+      data: {
+        name: data
+      }
+    }).then(res => {
 
-  //     console.log(res);
-  //     var newData3 = res.result.data;
-  //     console.log("小花");
-  //     console.log(newData3);
-  //     console.log(newData3[0]);
-  //     this.setData({
-  //       datainfo: newData3,
-  //       datainfo1: newData3[0]
-  //     })
-  //   })
-  // },
+      console.log(res);
+      var newData3 = res.result;
+      console.log("小花");
+      console.log(newData3);
+      console.log(newData3[0]);
+      this.setData({
+        datainfo: newData3,
+        datainfo1: newData3[0]
+      });
+    });
+  },
 
-// 查询设备信息的函数
+// 查询设备信息的函数--放在云上
   queryDeviceInfo(deviceId, successCallback, failCallback) {
     const db = wx.cloud.database();
     const devicesCollection = db.collection('devices');
@@ -134,8 +133,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // this.getStorageSync()
-    // 获取传递的设备id
+    if (options.source === 'scan') {
+      // 扫码进入逻辑
+      // 获取传递的设备id
     const deviceId = options.id;
     console.log("跳转设备:", deviceId);
     // 封装后的查询函数调用
@@ -150,5 +150,10 @@ Page({
         // 处理设备不存在或查询失败的情况
       }
     );
-  }
+    } else {
+      // 其他方式进入逻辑，例如从首页进入
+      console.log("首页进入");
+      this.getStorageSync();
+    }
+  },
 })

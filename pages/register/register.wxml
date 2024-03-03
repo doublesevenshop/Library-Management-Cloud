@@ -1,13 +1,15 @@
 <view class="container1">
+  <image class="background" src="/icon/login.png" mode="aspectFill"></image>
 
-<view class="tuguanyun">
+  <!-- 这里是你的内容，比如文字 -->
+  <view class="tuguanyun">
   图管云
   </view>  
 <view class="logo">
   <image class="library" src="https://687a-hz-6gtgh3bec03e273e-1307460552.tcb.qcloud.la/images/%E5%9B%BE%E7%AE%A1%E4%BC%9Alogo%402x.png?sign=3b477cd10fdd3b0e6f6a0e0dc7374fda&t=1648803416" mode="widthFix"></image>
 </view>
 <view class="shebei">
-  北京邮电大学图书馆设备管理系统
+  北邮图书馆智能巡视系统
 </view>
 
 <!-- 下划线 -->
